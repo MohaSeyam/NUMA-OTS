@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "NUMA-OTS: NUMA-Aware Task Scheduling for Shared-Memory Parallel Applications Using OpenMP"
+message: "If you use this simulation suite, runtime hook, or dataset, please cite it as below."
+type: software
+authors:
+  - given-names: Khalil Ibrahim
+    family-names: Abu Zanouna
+    affiliation: Computer Engineering Department, Islamic University of Gaza
+    email: khalil500863335@gmail.com
+  - given-names: Mohammed Abdulsalam
+    family-names: Seyam
+    affiliation: Computer Engineering Department, Islamic University of Gaza
+    email: moh.seyam0@gmail.com
+license: MIT
+version: 1.0.0
+date-released: 2026-11-20
+keywords:
+  - NUMA
+  - OpenMP
+  - task scheduling
+  - work stealing
+  - page migration
+  - discrete-event simulation

@@ -1,0 +1,9 @@
+workload,policy,instructions,data_refs,l1d_miss_pct,l3_local_miss_pct,l3_global_miss_pct,llc_misses,energy_mj,simulator_source
+SpMV,base,2098003,797631,6.59,94.2,6.211,49544,2.71,valgrind_cachegrind
+SpMV,ots,2097522,797672,6.26,21.13,1.322,10545,1.34,valgrind_cachegrind
+BFS,base,1238167,297683,11.34,89.46,10.144,30197,1.638,valgrind_cachegrind
+BFS,ots,1237762,297740,7.63,33.14,2.528,7527,0.824,valgrind_cachegrind
+HashJoin,base,4889838,944984,4.76,95.86,4.564,43126,3.644,valgrind_cachegrind
+HashJoin,ots,4889210,944977,3.57,30.22,1.079,10201,2.471,valgrind_cachegrind
+PageRank,base,2645222,1018226,4.31,95.21,4.105,41803,2.653,valgrind_cachegrind
+PageRank,ots,2644545,1018203,3.77,24.07,0.908,9245,1.503,valgrind_cachegrind

@@ -1,0 +1,1 @@
+[06_sniper_microbench] workload=join policy=base threads=8 checksum=393216.000000

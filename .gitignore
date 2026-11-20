@@ -1,0 +1,33 @@
+# Compiled binaries & shared libraries
+unit_stress_tests
+unit_stress_tests_san
+trace_extractor
+numa_ots_des_sim
+sniper_microbench
+qemu_numa_verify
+libnuma_ots_hook.so
+*.o
+*.so
+
+# LaTeX intermediate build files (keep .tex and final .pdf)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+
+# Python & OS artifacts
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Optional QEMU VM images & local defense notes
+*.img
+*.qcow2
+*.iso
+MULTI_ROLE_REVIEW_AND_DEFENSE_GUIDE.md

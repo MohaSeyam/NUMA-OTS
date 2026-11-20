@@ -1,0 +1,1 @@
+[06_sniper_microbench] workload=bfs policy=ots threads=8 checksum=196692.000000

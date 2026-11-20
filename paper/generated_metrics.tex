@@ -1,0 +1,108 @@
+% Auto-generated from live simulation CSV outputs by 08_populate_latex_metrics.py
+\newcommand{\CaseStudyRows}{%
+SpMV & 22.53 & 25.22 & 16.30 & 20.38 & 23.00 & 1.11$\times$ & 26.6\% & 64.83 / 2.34 \\
+BFS & 5.09 & 5.13 & 4.46 & 4.93 & 5.75 & 1.03$\times$ & 29.0\% & 52.08 / 2.17 \\
+HashJoin & 20.45 & 22.92 & 15.49 & 18.22 & 20.86 & 1.12$\times$ & 26.7\% & 64.88 / 2.34 \\
+PageRank & 25.52 & 28.48 & 18.98 & 23.06 & 25.89 & 1.11$\times$ & 26.6\% & 64.95 / 2.34 \\
+}
+
+\newcommand{\MainSpeedupRows}{%
+SpMV (2N) & 41.53$\pm$0.22 & 40.76 & 44.28 & 42.11 & \textbf{37.24} & 39.09 & 38.51$\pm$0.51 & 1.08$\times$ [1.07,1.08] & 6.4 & $1.12e-08$ & 1.08$\times$ (0.0\%) \\
+SpMV (4N) & 22.53$\pm$0.12 & 20.38 & 16.30 & 23.00 & 17.54 & 14.74 & \textbf{14.62$\pm$0.23} & 1.54$\times$ [1.53,1.55] & 26.0 & $1.12e-08$ & 1.67$\times$ (8.2\%) \\
+SpMV (8N) & 12.98$\pm$0.11 & 9.95 & 9.39 & 14.39 & \textbf{7.01} & 7.67 & 7.66$\pm$0.02 & 1.69$\times$ [1.69,1.70] & 53.0 & $1.12e-08$ & 1.97$\times$ (16.2\%) \\
+\midrule
+BFS (2N) & 8.33$\pm$0.08 & 8.44 & 8.78 & 8.58 & \textbf{8.21} & 8.40 & 8.27$\pm$0.03 & 1.01$\times$ [1.00,1.01] & 0.6 & $4.66e-03$ & 1.05$\times$ (4.7\%) \\
+BFS (4N) & 5.09$\pm$0.07 & 4.93 & 4.46 & 5.75 & \textbf{4.29} & 4.71 & 4.69$\pm$0.02 & 1.09$\times$ [1.08,1.09] & 5.8 & $1.12e-08$ & 1.29$\times$ (18.9\%) \\
+BFS (8N) & 3.60$\pm$0.04 & 3.22 & 3.09 & 4.30 & \textbf{3.08} & 3.62 & 3.59$\pm$0.05 & 1.00$\times$ [1.00,1.01] & 0.2 & $0.159$ (n.s.) & 1.50$\times$ (49.0\%) \\
+\midrule
+HashJoin (2N) & 37.75$\pm$0.18 & 40.58 & 40.19 & 38.53 & 36.91 & \textbf{36.74} & 37.05$\pm$0.08 & 1.02$\times$ [1.02,1.02] & 4.3 & $1.12e-08$ & 1.03$\times$ (0.7\%) \\
+HashJoin (4N) & 20.45$\pm$0.16 & 18.22 & \textbf{15.49} & 20.86 & 16.15 & 15.64 & 15.51$\pm$0.15 & 1.32$\times$ [1.31,1.32] & 24.1 & $1.12e-08$ & 1.46$\times$ (10.9\%) \\
+HashJoin (8N) & 11.81$\pm$0.10 & 8.98 & 8.60 & 12.88 & 7.85 & 7.29 & \textbf{7.28$\pm$0.11} & 1.62$\times$ [1.61,1.63] & 38.1 & $1.12e-08$ & 1.85$\times$ (14.1\%) \\
+\midrule
+PageRank (2N) & 47.32$\pm$0.22 & 49.66 & 50.11 & 47.80 & \textbf{43.95} & 44.69 & 44.10$\pm$0.95 & 1.07$\times$ [1.06,1.08] & 3.1 & $1.12e-08$ & 1.06$\times$ (1.0\%) \\
+PageRank (4N) & 25.52$\pm$0.15 & 23.06 & 18.98 & 25.89 & 20.21 & 17.86 & \textbf{17.73$\pm$0.13} & 1.44$\times$ [1.44,1.44] & 47.9 & $1.12e-08$ & 1.57$\times$ (9.0\%) \\
+PageRank (8N) & 14.64$\pm$0.12 & 11.35 & 10.73 & 15.98 & \textbf{8.31} & 8.70 & 8.68$\pm$0.05 & 1.69$\times$ [1.68,1.69] & 48.6 & $1.12e-08$ & 1.91$\times$ (13.2\%) \\
+}
+
+\newcommand{\AblationRows}{%
+\texttt{Base} (central FIFO) & 1.00$\times$ (14.9\%) & 1.00$\times$ (17.5\%) & 1.00$\times$ (14.9\%) & 1.00$\times$ (14.8\%) \\
+\texttt{Mem0} (\texttt{--membind=0}) & 0.90$\times$ (15.6\%) & 0.96$\times$ (20.2\%) & 0.90$\times$ (15.6\%) & 0.90$\times$ (15.6\%) \\
+\texttt{Inter} (\texttt{--interleave=all}) & 1.38$\times$ (12.4\%) & 1.17$\times$ (13.1\%) & 1.37$\times$ (12.5\%) & 1.36$\times$ (12.4\%) \\
+\texttt{ParFT} (static first-touch) & 1.30$\times$ (13.6\%) & 1.12$\times$ (14.5\%) & 1.31$\times$ (16.8\%) & 1.29$\times$ (13.6\%) \\
+\texttt{AutoNUMA} (reactive faults) & 0.90$\times$ (16.1\%) & 0.84$\times$ (22.8\%) & 0.92$\times$ (15.8\%) & 0.92$\times$ (16.3\%) \\
+M1 only (\texttt{depend} route) & 1.45$\times$ (40.9\%) & 1.14$\times$ (39.7\%) & 1.25$\times$ (40.1\%) & 1.31$\times$ (40.0\%) \\
+M2 only (gated migration) & 0.94$\times$ (16.0\%) & 0.88$\times$ (22.7\%) & 0.95$\times$ (15.6\%) & 0.95$\times$ (16.0\%) \\
+M3 only (3-tier SLIT queues) & 1.00$\times$ (14.9\%) & 0.98$\times$ (14.1\%) & 1.01$\times$ (16.1\%) & 1.00$\times$ (14.9\%) \\
+M1 + M2 (no SLIT queues) & 1.28$\times$ (49.3\%) & 0.96$\times$ (40.7\%) & 1.25$\times$ (46.6\%) & 1.27$\times$ (48.9\%) \\
+M1 + M3 (no migration) & 1.85$\times$ (72.7\%) & 1.17$\times$ (64.8\%) & 1.50$\times$ (72.7\%) & 1.76$\times$ (72.6\%) \\
+M2 + M3 (no \texttt{depend} M1) & 0.91$\times$ (12.7\%) & 0.84$\times$ (14.1\%) & 0.93$\times$ (14.8\%) & 0.92$\times$ (12.6\%) \\
+Ungated M2 ($\gamma{=}1.0, T_{\mathrm{cool}}{=}0$) & 1.69$\times$ (82.9\%) & 1.00$\times$ (66.4\%) & 1.62$\times$ (79.9\%) & 1.68$\times$ (82.8\%) \\
+\textbf{Full NUMA-OTS (M1+M2+M3)} & \textbf{1.69$\times$ (82.9\%)} & \textbf{1.00$\times$ (66.4\%)} & \textbf{1.62$\times$ (80.0\%)} & \textbf{1.69$\times$ (82.9\%)} \\
+}
+
+\newcommand{\TelemetryEightNodeRows}{%
+\texttt{Base} $\alpha_{\mathrm{loc}}$ & 14.9\% & 17.5\% & 14.9\% & 14.8\% \\
+\textbf{Full OTS $\alpha_{\mathrm{loc}}$} & \textbf{82.9\%} & \textbf{66.4\%} & \textbf{80.0\%} & \textbf{82.9\%} \\
+\texttt{Base} $T_{\mathrm{cont}}$ (ns) & 60.45 & 48.55 & 60.18 & 60.31 \\
+\textbf{Full OTS $T_{\mathrm{cont}}$ (ns)} & \textbf{6.19} & \textbf{17.74} & \textbf{11.73} & \textbf{7.76} \\
+Memory-stall fraction $f_{\mathrm{mem}}$ & 0.878 & 0.834 & 0.898 & 0.843 \\
+Migrations / trial (Ungated $\to$ Full) & 472.5$\to$465.3 & 176.1$\to$156.9 & 384.0$\to$384.0 & 473.6$\to$468.3 \\
+\textbf{6-Epoch re-migs (Ungated $\to$ Full)} & \textbf{8.9$\to$6.4} & \textbf{10.0$\to$0.0} & \textbf{5.4$\to$5.0} & \textbf{8.5$\to$6.0} \\
+\textbf{Beneficial migration precision (Full)} & \textbf{96.4\%} & \textbf{83.8\%} & \textbf{96.0\%} & \textbf{96.5\%} \\
+Critical-path mig.\ pause (ms, Full) & 1.417 & 0.599 & 1.114 & 1.418 \\
+Total overhead (\% of makespan, Full) & 19.01\% & 16.88\% & 15.79\% & 16.84\% \\
+Stage~1 DES LLC miss (\% Base $\to$ Full) & 43.6$\to$29.4 & 44.0$\to$42.3 & 43.0$\to$30.8 & 43.6$\to$29.5 \\
+Dynamic energy (mJ, Base $\to$ Full) & 176.0$\to$114.7 & 35.6$\to$27.7 & 158.1$\to$104.9 & 202.5$\to$134.4 \\
+Total energy (mJ, Base $\to$ Full) & 2044.6$\to$1218.0 & 554.4$\to$544.7 & 1858.3$\to$1152.4 & 2310.1$\to$1383.6 \\
+}
+
+\newcommand{\ControllerAccountingRows}{%
+SpMV & 1024 & 1932 & 1300$\to$244 & 180 & 251.6k$\to$86.8k & 0.88$\to$0.48 & 88.0$\to$12.9 \\
+BFS & 129 & 1542 & 1040$\to$418 & 280 & 99.2k$\to$48.0k & 0.34$\to$0.27 & 23.9$\to$15.7 \\
+HashJoin & 768 & 1932 & 1293$\to$304 & 220 & 305.5k$\to$116.5k & 0.88$\to$0.65 & 88.0$\to$28.8 \\
+PageRank & 1024 & 1932 & 1298$\to$242 & 200 & 278.6k$\to$96.4k & 0.88$\to$0.54 & 88.0$\to$17.0 \\
+}
+
+\newcommand{\SpdRangeAll}{$1.00\times$ to $1.69\times$}
+\newcommand{\SpdRangeIterTwo}{$1.02\times$--$1.08\times$}
+\newcommand{\SpdRangeIterFour}{$1.32\times$--$1.54\times$}
+\newcommand{\SpdRangeIterEight}{$1.62\times$--$1.69\times$}
+\newcommand{\MaxPHolmSig}{$p_{\mathrm{Holm}} \le 4.66e-03$}
+\newcommand{\AlphaBaseEightRange}{$14.8\%$--$17.5\%$}
+\newcommand{\AlphaOtsEightIterRange}{$80.0\%$--$82.9\%$}
+\newcommand{\AlphaOtsEightAllRange}{$66.4\%$--$82.9\%$}
+\newcommand{\AlphaOtsEightBfs}{$66.4\%$}
+\newcommand{\TcontRedRange}{$63.5\%$--$89.8\%$}
+\newcommand{\TcontBaseEightRange}{$48.55$--$60.45$\,ns}
+\newcommand{\TcontOtsEightRange}{$6.19$--$17.74$\,ns}
+\newcommand{\OvhdRangeAll}{$0.38\%$--$19.01\%$}
+\newcommand{\OvhdRangeEight}{$15.79\%$--$19.01\%$}
+\newcommand{\DynEnergyRedRange}{$22.0\%$--$34.8\%$}
+\newcommand{\TotEnergyRedRange}{$1.7\%$--$40.4\%$}
+\newcommand{\TotEnergyRedIterRange}{$38.0\%$--$40.4\%$}
+\newcommand{\TotEnergyRedBfs}{$1.7\%$}
+\newcommand{\DesLlcBaseRange}{$43.0\%$--$44.0\%$}
+\newcommand{\DesLlcOtsRange}{$29.4\%$--$42.3\%$}
+\newcommand{\CaseStudyAlphaRange}{$26.6\%$--$29.0\%$}
+\newcommand{\CaseStudyTcontRange}{$52.08$--$64.95$\,ns}
+\newcommand{\CaseStudyGammaRange}{$2.17$--$2.34$}
+\newcommand{\CaseStudyBaseParftRange}{$1.03\times$--$1.12\times$}
+\newcommand{\SpmvSpdAll}{$1.08\times$ (2N), $1.54\times$ (4N), and $1.69\times$ (8N)}
+\newcommand{\PrSpdAll}{$1.07\times$ (2N), $1.44\times$ (4N), and $1.69\times$ (8N)}
+\newcommand{\JoinSpdAll}{$1.02\times$ (2N), $1.32\times$ (4N), and $1.62\times$ (8N)}
+\newcommand{\JoinInterFullRange}{$1.00\times$--$1.18\times$}
+\newcommand{\BfsSpdAll}{$1.01\times$ (2N), $1.09\times$ (4N), and $1.00\times$ (8N)}
+\newcommand{\BfsMthirteenAll}{$1.01\times$ (2N), $1.19\times$ (4N), and $1.17\times$ (8N)}
+\newcommand{\BfsRfPredEight}{$1.50\times$}
+\newcommand{\BfsRfErrEight}{$49.0\%$}
+\newcommand{\IterRfErrRange}{$0.0\%$--$16.2\%$}
+\newcommand{\MemZeroBeatRange}{$1.04\times$--$1.89\times$}
+\newcommand{\InterBeatRange}{$0.86\times$--$1.24\times$}
+\newcommand{\ParFtBeatRange}{$0.90\times$--$1.39\times$}
+\newcommand{\AutoNumaBeatRange}{$1.04\times$--$1.88\times$}
+\newcommand{\ReSixSummary}{SpMV $8.9 \to 6.4$, BFS $10.0 \to 0.0$, HashJoin $5.4 \to 5.0$, and PageRank $8.5 \to 6.0$ (beneficial migration precision $83.8\%$--$96.5\%$)}
+\newcommand{\EpycEightSummary}{$1.72\times$ on SpMV, $0.98\times$ on BFS, $1.64\times$ on HashJoin, $1.71\times$ on PageRank}
+\newcommand{\HookSummaryText}{intercepted $2,950$ \texttt{GOMP\_task} calls ($2,948$ with \texttt{depend} clauses, i.e., $99.93\%$), parsed $5,764$ locators with an $82.9\%$ PHHT hit ratio ($4,776$ hits, $988$ misses across $867$ per-task \texttt{move\_pages(2)} query syscalls; mean query batch $1.14$ pages/call), and submitted $213$ M2 page-migration requests across $8$ non-empty batches out of $27$ \texttt{GOMP\_taskwait} epochs (mean request batch $B=26.62$, max $48$ pages; $0$ kernel-confirmed cross-node moves on the single-node WSL2 host)}
+\newcommand{\BatchHistSummary}{mean DES migration batch sizes on 8~domains are SpMV: $58.2$ (max 64), BFS: $39.2$ (max 64), HashJoin: $64.0$ (max 64), PageRank: $58.8$ (max 64)}
+\newcommand{\GranSweepSummary}{8N BFS Full NUMA-OTS scales from $0.94\times$ at $19\,\mu$s to $1.01\times$ at $320\,\mu$s and $1.18\times$ at $2560\,\mu$s (vs.\ \texttt{M1+M3} at $1.17\times$), while 8N SpMV scales from $1.83\times$ to $2.02\times$}
+\newcommand{\SensSweepSummary}{sweeping $\gamma \in [0.5, 3.0]$ on 8N SpMV yields $1.70\times$ at $\gamma=1.5$ vs.\ $1.71\times$ at $\gamma=3.0$; sweeping $T_{\mathrm{rem}}/T_{\mathrm{loc}} \in [1.25, 3.00]$ on 4N SpMV increases speedup monotonically from $1.35\times$ to $1.92\times$; sweeping misses/page/sweep $\in [2, 100]$ ($\times 10$ sweeps/phase) on 8N SpMV rises from $1.03\times$ at $2$ to a peak of $1.71\times$ at $20$ before all-controller saturation compresses speedup to $1.21\times$ at $100$; sweeping $f_{\mathrm{mem}} \in [0.21, 0.95]$ scales 8N SpMV speedup from $1.23\times$ to $1.72\times$; varying initial Node-0 page skew from $0\%$ to $100\%$ shifts 8N SpMV speedup from $1.31\times$ to $1.75\times$}

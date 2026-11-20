@@ -1,0 +1,7 @@
+date_utc: 2026-11-20T19:12:27Z
+kernel: Linux 6.18.58.1-microsoft-standard-WSL2 x86_64
+gcc: gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+python: Python 3.14.4
+numpy 2.3.5 | pandas 2.3.3 | scipy 1.16.3 | matplotlib 3.10.7+dfsg1
+OMP_NUM_THREADS=4
+TRIALS=30

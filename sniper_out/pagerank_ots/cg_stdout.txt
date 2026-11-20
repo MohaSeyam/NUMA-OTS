@@ -1,0 +1,1 @@
+[06_sniper_microbench] workload=pagerank policy=ots threads=8 checksum=0.008789

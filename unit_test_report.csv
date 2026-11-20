@@ -1,0 +1,9 @@
+test,status
+T1_PHHT,PASS
+T2_ABI,PASS
+T3_M1_Eq5,PASS
+T4_M2_Prop1,PASS
+T5_OMP52,PASS
+T6_Untied_Detach,PASS
+T7_Nested_Cancel,PASS
+T8_Liveness,PASS

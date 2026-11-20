@@ -1,0 +1,22 @@
+==7592== Cachegrind, a high-precision tracing profiler
+==7592== Copyright (C) 2002-2024, and GNU GPL'd, by Nicholas Nethercote et al.
+==7592== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==7592== Command: ./sniper_microbench join ots
+==7592== 
+--7592-- warning: L3 cache found, using its data for the LL simulation.
+==7592== 
+==7592== I refs:        4,889,210
+==7592== I1  misses:        2,672
+==7592== LLi misses:        2,234
+==7592== I1  miss rate:      0.05%
+==7592== LLi miss rate:      0.05%
+==7592== 
+==7592== D refs:          944,977  (840,513 rd   + 104,464 wr)
+==7592== D1  misses:       33,754  ( 28,673 rd   +   5,081 wr)
+==7592== LLd misses:       10,201  (  5,291 rd   +   4,910 wr)
+==7592== D1  miss rate:       3.6% (    3.4%     +     4.9%  )
+==7592== LLd miss rate:       1.1% (    0.6%     +     4.7%  )
+==7592== 
+==7592== LL refs:          36,426  ( 31,345 rd   +   5,081 wr)
+==7592== LL misses:        12,435  (  7,525 rd   +   4,910 wr)
+==7592== LL miss rate:        0.2% (    0.1%     +     4.7%  )
