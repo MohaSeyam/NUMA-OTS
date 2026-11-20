@@ -7,11 +7,11 @@
 # this project folder with the guest via VirtFS (-virtfs).
 #
 # Usage on Ubuntu / WSL2:
-#   chmod +x run_stage2_qemu_host.sh run_stage2_inside_guest.sh
-#   ./run_stage2_qemu_host.sh
+#   chmod +x scripts/run_stage2_qemu_host.sh scripts/run_stage2_inside_guest.sh
+#   ./scripts/run_stage2_qemu_host.sh
 set -euo pipefail
 
-PROJECT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 VM_DIR="${HOME}/qemu_numa"
 mkdir -p "$VM_DIR"
 cd "$VM_DIR"
@@ -69,7 +69,7 @@ fi
 echo "========================================================================"
 echo " Booting 4-Node Virtual NUMA Guest (login: ubuntu / password: ubuntu)"
 echo " Once logged in, run:"
-echo "   sudo mount -t 9p -o trans=virtio hostshare /mnt && cd /mnt && ./run_stage2_inside_guest.sh"
+echo "   sudo mount -t 9p -o trans=virtio hostshare /mnt && cd /mnt && ./scripts/run_stage2_inside_guest.sh"
 echo " To exit QEMU: press Ctrl+A then X"
 echo "========================================================================"
 

@@ -14,6 +14,8 @@ authors:
 license: MIT
 version: 1.0.0
 date-released: 2026-11-20
+repository-code: "https://github.com/MohaSeyam/NUMA-OTS"
+url: "https://github.com/MohaSeyam/NUMA-OTS"
 keywords:
   - NUMA
   - OpenMP

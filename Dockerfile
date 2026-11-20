@@ -1,6 +1,6 @@
 # Dockerfile — Reproducible Container Environment for NUMA-OTS
 # Build: docker build -t numa-ots-suite .
-# Run  : docker run --rm -v "$(pwd):/workspace" numa-ots-suite ./run_all.sh 30
+# Run  : docker run --rm -v "$(pwd):/workspace" numa-ots-suite ./scripts/run_all.sh 30
 
 FROM ubuntu:24.04
 ENV DEBIAN_FRONTEND=noninteractive
@@ -15,6 +15,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /workspace
 COPY . /workspace
-RUN dos2unix *.sh *.py && chmod +x *.sh *.py
+RUN dos2unix scripts/*.sh src/*.py && chmod +x scripts/*.sh src/*.py
 
-CMD ["./run_all.sh", "30"]
+CMD ["./scripts/run_all.sh", "30"]

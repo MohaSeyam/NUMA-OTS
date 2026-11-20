@@ -1,2 +1,2 @@
 real_sysfs_nodes,configured_nodes,pmu_supported,tasks_intercepted,tasks_with_depend,tasks_steered,locators_parsed,phht_hits,phht_misses,phht_ttl_expired,batched_queries,mean_query_batch,m2_epochs,m2_nonempty_batches,m2_mig_requests,m2_mig_confirmed,mean_mig_batch,max_mig_batch,hist_b0,hist_b1_8,hist_b9_16,hist_b17_32,hist_b33_64
-1,4,0,2950,2948,2948,5764,4776,988,512,867,1.14,27,8,213,0,26.62,48,19,3,1,0,4
+1,4,0,2950,2948,2948,5764,4772,992,528,909,1.09,27,9,216,0,24.00,49,18,4,1,0,4

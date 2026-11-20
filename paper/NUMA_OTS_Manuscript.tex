@@ -469,7 +469,7 @@ We presented a simulation-based design and evaluation of NUMA-OTS, combining \te
 \subsection{Extensions: NUMA-Aware GPU Offloading, CXL Memory Pooling}
 Future work will integrate M3's three-tier queues directly into patched GNU \texttt{libgomp.so.1} and LLVM \texttt{libomp} on bare-metal multi-socket Xeon and EPYC servers with hardware PEBS and RAPL MSRs \cite{ref32}, extend M1 affinity scoring to OpenMP \texttt{target} GPU offloading across NUMA-attached PCIe/NVLink topologies, and generalize M2's batch-calibrated migration gate to tiered CXL memory pooling \cite{ref33}.
 
-\noindent\textbf{Reproducibility:} All C11/Python sources, 8-test ASan/UBSan suite, deterministic traces (with SHA-256 digests), raw CSVs, and figure scripts are packaged in the companion artifact; running the Stage~1 and Stage~3 driver scripts (\texttt{./run\_all.sh 30} and the Valgrind Cachegrind driver) regenerates every table and figure.
+\noindent\textbf{Reproducibility:} All C11/Python sources, 8-test ASan/UBSan suite, deterministic traces (SHA-256), raw CSVs, and figure scripts are publicly available at \url{https://github.com/MohaSeyam/NUMA-OTS}; running \texttt{./scripts/run\_all.sh 30} and \texttt{./scripts/run\_stage3\_sniper.sh} regenerates every table and figure.
 
 \noindent\textbf{Acknowledgments:} The authors thank the Computer Engineering Department at the Islamic University of Gaza for academic support.
 
